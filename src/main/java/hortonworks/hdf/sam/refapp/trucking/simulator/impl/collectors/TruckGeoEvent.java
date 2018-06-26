@@ -2,7 +2,7 @@ package hortonworks.hdf.sam.refapp.trucking.simulator.impl.collectors;
 
 import java.io.Serializable;
 
-public class TruckGeoEent implements Serializable {
+public class TruckGeoEvent implements Serializable {
 	
 	private String eventTime;
 	private String eventSource;

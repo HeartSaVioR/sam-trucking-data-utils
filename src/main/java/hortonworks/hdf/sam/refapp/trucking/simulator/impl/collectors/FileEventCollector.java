@@ -1,5 +1,6 @@
 package hortonworks.hdf.sam.refapp.trucking.simulator.impl.collectors;
 
+import hortonworks.hdf.sam.refapp.trucking.simulator.impl.domain.SecurityType;
 import hortonworks.hdf.sam.refapp.trucking.simulator.impl.domain.transport.EventSourceType;
 import hortonworks.hdf.sam.refapp.trucking.simulator.impl.domain.transport.MobileEyeEvent;
 
@@ -21,10 +22,10 @@ public class FileEventCollector extends BaseTruckEventCollector {
       
 	}
 	
-	public FileEventCollector(String fileName, EventSourceType eventSource) {
+	public FileEventCollector(String fileName, EventSourceType eventSource, SecurityType securityType) {
 	       this.truckEventsFile = new File(fileName);
 	       this.eventSourceType = eventSource;
-	      
+	      // securityType not used
 		}	
 	
 	@Override
